@@ -12,10 +12,11 @@ require("lazy").setup({
   require("plugins/mini"),
   require("plugins/treesitter"),
   require("plugins/autopairs"),
-  require("plugins/neo-tree"),
+  -- require("plugins/neo-tree"),
   require("plugins/quarto"),
   require("plugins/slime"),
   require("plugins/vim-tmux-navigator"),
+  require("plugins/colorizer"),
 }, {
   ui = {
     -- default lazy.nvim defined Nerd Font icons, otherwise define a unicode icons table

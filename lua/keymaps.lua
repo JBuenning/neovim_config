@@ -2,7 +2,7 @@
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- Diagnostic keymaps
-vim.keymap.set("n", "<leader>lq", vim.diagnostic.setloclist, { desc = "[L]SP: diagnostic [Q]uickfix list" })
+vim.keymap.set("n", "gq", vim.diagnostic.setloclist, { desc = "[g]oto [q]uickfix list" })
 vim.keymap.set("n", "<leader>ld", vim.diagnostic.open_float, { desc = "[L]SP: hover [d]iagnostic" })
 
 vim.keymap.set("n", "<leader>td", function()
