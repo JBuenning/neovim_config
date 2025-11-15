@@ -3,7 +3,7 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "gq", vim.diagnostic.setloclist, { desc = "[g]oto [q]uickfix list" })
-vim.keymap.set("n", "<leader>ld", vim.diagnostic.open_float, { desc = "[L]SP: hover [d]iagnostic" })
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "hover [e]rror" })
 
 vim.keymap.set("n", "<leader>td", function()
   vim.diagnostic.enable(not vim.diagnostic.is_enabled())
@@ -45,7 +45,7 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- paste keeping the paste buffer
-vim.keymap.set("x", "<leader>p", "\"_dP")
+vim.keymap.set("x", "<leader>p", "\"_dp")
 vim.keymap.set({ "v", "n" }, "<leader>d", "\"_d")
 
 -- search replace word under cursor

@@ -11,7 +11,7 @@ require("lazy").setup({
   require("plugins/todo-comments"),
   require("plugins/mini"),
   require("plugins/treesitter"),
-  require("plugins/autopairs"),
+  -- require("plugins/autopairs"),
   -- require("plugins/neo-tree"),
   require("plugins/quarto"),
   require("plugins/slime"),
