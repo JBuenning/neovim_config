@@ -3,7 +3,9 @@ vim.opt.termguicolors = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.opt.autochdir = true
+vim.opt.conceallevel = 1
+
+-- vim.opt.autochdir = true
 
 vim.opt.mouse = "a"
 
@@ -35,7 +37,8 @@ vim.opt.signcolumn = "yes"
 vim.opt.updatetime = 250
 
 -- Decrease mapped sequence wait time
-vim.opt.timeoutlen = 300
+-- vim.opt.timeoutlen = 300
+vim.opt.timeout = false
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true

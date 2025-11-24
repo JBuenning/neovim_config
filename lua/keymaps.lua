@@ -44,8 +44,12 @@ vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- Center on page up/down
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+
 -- paste keeping the paste buffer
-vim.keymap.set("x", "<leader>p", "\"_dp")
+vim.keymap.set("x", "<leader>p", "\"_dP")
 vim.keymap.set({ "v", "n" }, "<leader>d", "\"_d")
 
 -- search replace word under cursor
