@@ -52,7 +52,7 @@ return {
       ui.setup({
         windows = {
           terminal = { hide = { 'cppdbg' } },
-          height = 0.33,
+          -- height = 0.33,
         },
         winbar = {
           sections = { "console", "watches", "scopes", "exceptions", "breakpoints", "threads", "repl", },
