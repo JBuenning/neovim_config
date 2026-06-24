@@ -244,7 +244,7 @@ return {
           cmd = { "clangd", "--clang-tidy", "--completion-style=bundled" }
         },
         -- gopls = {},
-        pyright = {},
+        basedpyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
