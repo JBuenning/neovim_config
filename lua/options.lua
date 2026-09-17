@@ -3,7 +3,7 @@ vim.opt.termguicolors = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.opt.conceallevel = 1
+vim.opt.conceallevel = 0
 
 -- vim.opt.autochdir = true
 
