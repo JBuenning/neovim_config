@@ -21,20 +21,20 @@ return {
     end,
   },
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    'catppuccin/nvim',
+    name = 'catppuccin',
     priority = 1000,
     config = function()
       -- vim.cmd.colorscheme 'catppuccin-mocha'
       vim.cmd.colorscheme 'catppuccin-macchiato'
-    end
+    end,
   },
   {
-    "rose-pine/neovim",
-    name = "rose-pine",
+    'rose-pine/neovim',
+    name = 'rose-pine',
     config = function()
       -- vim.cmd.colorscheme 'rose-pine'
-    end
+    end,
   },
   {
     'rebelot/kanagawa.nvim',
