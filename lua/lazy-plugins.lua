@@ -1,7 +1,7 @@
 require("lazy").setup({
-  "tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
+  { "NMAC427/guess-indent.nvim", opts = {} }, -- Detect tabstop and shiftwidth automatically
   require("plugins/treesitter"),
-  -- require("plugins/which-key"),
+  require("plugins/which-key"),
   require("plugins/telescope"),
   require("plugins/mini"),
   require("plugins/gitsigns"),
@@ -12,11 +12,10 @@ require("lazy").setup({
   require("plugins/todo-comments"),
   require("plugins/colorizer"),
   -- require("plugins/autopairs"),
-  -- require("plugins/neo-tree"),
   require("plugins/oil"),
   require("plugins/vim-tmux-navigator"),
   require("plugins/dap"),
-  require("plugins/quarto"),
+  -- require("plugins/quarto"),
   require("plugins/slime"),
 }, {
   ui = {
