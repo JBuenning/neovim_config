@@ -1,5 +1,6 @@
 require('lazy').setup {
   { 'NMAC427/guess-indent.nvim', opts = {} }, -- Detect tabstop and shiftwidth automatically
+  -- { 'windwp/nvim-autopairs', opts = {} },
   require 'plugins/treesitter',
   require 'plugins/which-key',
   require 'plugins/telescope',
@@ -12,7 +13,6 @@ require('lazy').setup {
   require 'plugins/colorthemes',
   require 'plugins/todo-comments',
   require 'plugins/colorizer',
-  -- require("plugins/autopairs"),
   require 'plugins/oil',
   require 'plugins/vim-tmux-navigator',
   require 'plugins/dap',
