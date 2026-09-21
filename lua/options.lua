@@ -2,8 +2,8 @@
 vim.loader.enable()
 
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
 vim.g.have_nerd_font = true
 
@@ -16,7 +16,7 @@ vim.opt.conceallevel = 0
 
 -- vim.opt.autochdir = true
 
-vim.opt.mouse = "a"
+vim.opt.mouse = 'a'
 
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
@@ -25,9 +25,7 @@ vim.opt.showmode = false
 --  Schedule the setting after `UiEnter` because it can increase startup-time.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
-vim.schedule(function()
-  vim.opt.clipboard = "unnamedplus"
-end)
+vim.schedule(function() vim.opt.clipboard = 'unnamedplus' end)
 
 vim.opt.breakindent = true
 
@@ -40,7 +38,7 @@ vim.opt.backup = false
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
-vim.opt.signcolumn = "yes"
+vim.opt.signcolumn = 'yes'
 
 -- Decrease update time
 vim.opt.updatetime = 250
@@ -54,10 +52,10 @@ vim.opt.splitbelow = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 vim.opt.list = true
-vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- Preview substitutions live
-vim.opt.inccommand = "split"
+vim.opt.inccommand = 'split'
 
 vim.opt.cursorline = true
 
@@ -72,7 +70,6 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = tabsize
 vim.opt.tabstop = tabsize
 vim.opt.softtabstop = tabsize
-
 
 -- global statusline
 -- vim.opt.laststatus = 3
