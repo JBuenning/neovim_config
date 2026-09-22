@@ -133,6 +133,11 @@ return {
       -- require('mason').setup {}
       require('mason-lspconfig').setup {
         automatic_installation = false,
+        automatic_enable = {
+          exclude = {
+            'ruff',
+          },
+        },
       }
 
       -- Ensure the servers and tools above are installed
@@ -153,13 +158,15 @@ return {
         'stylua',
         'clang-format',
         'black',
-        -- 'ruff',
+        'ruff',
+        'markdownlint',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
       -- register server config
       for server_name, server in pairs(servers) do
         vim.lsp.config(server_name, server)
+        -- vim.lsp.enable(server_name) -- only necessary if automatic_enable=false
       end
     end,
   },
