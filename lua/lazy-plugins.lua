@@ -7,6 +7,7 @@ require('lazy').setup {
   require 'plugins/mini',
   require 'plugins/gitsigns',
   require 'plugins/lspconfig',
+  require 'plugins/lint',
   require 'plugins/conform',
   -- require 'plugins/cmp', -- alternative to blink
   require 'plugins/blink-cmp',

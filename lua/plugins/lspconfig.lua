@@ -153,7 +153,7 @@ return {
         'stylua',
         'clang-format',
         'black',
-        'ruff',
+        -- 'ruff',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
