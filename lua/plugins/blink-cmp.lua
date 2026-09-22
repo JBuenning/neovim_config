@@ -5,7 +5,7 @@ return {
       'saghen/blink.lib',
       'L3MON4D3/LuaSnip',
       -- optional: provides snippets for the snippet source
-      -- 'rafamadriz/friendly-snippets',
+      { 'rafamadriz/friendly-snippets', config = function() require('luasnip.loaders.from_vscode').lazy_load() end },
     },
     build = function()
       -- build the fuzzy matcher, optionally add a timeout to `pwait(timeout_ms)`
@@ -54,9 +54,19 @@ return {
         },
       },
 
-      -- sources = {
-      --   default = { 'lsp', 'path', 'snippets' },
-      -- },
+      sources = {
+        default = {
+          'path',
+          'snippets',
+          'lsp',
+        },
+        providers = {
+          snippets = {
+            -- make friendly-snippets get higher priority
+            score_offset = 2,
+          },
+        },
+      },
 
       snippets = { preset = 'luasnip' },
 
