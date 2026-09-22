@@ -11,7 +11,7 @@ require('lazy').setup {
   -- require 'plugins/cmp', -- alternative to blink
   require 'plugins/blink-cmp',
   require 'plugins/colorthemes',
-  require 'plugins/todo-comments',
+  { 'folke/todo-comments.nvim', opts = { signs = false } }, -- Highlight todo, notes, etc in comments
   -- require 'plugins/colorizer',
   { 'catgoose/nvim-colorizer.lua', opts = {} },
   require 'plugins/oil',
