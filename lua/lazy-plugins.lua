@@ -13,12 +13,11 @@ require('lazy').setup {
   require 'plugins/blink-cmp',
   require 'plugins/colorthemes',
   { 'folke/todo-comments.nvim', opts = { signs = false } }, -- Highlight todo, notes, etc in comments
-  -- require 'plugins/colorizer',
   { 'catgoose/nvim-colorizer.lua', opts = {} },
   require 'plugins/oil',
   require 'plugins/vim-tmux-navigator',
   require 'plugins/dap',
   -- require("plugins/quarto"),
-  require 'plugins/slime',
+  -- require 'plugins/slime',
 }
 -- vim: ts=2 sts=2 sw=2 et
